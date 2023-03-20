@@ -5,11 +5,68 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+:root{
+    --blue-bg: #1584FD;
+    --violet-bg: #9792E4;
+}
+ul{
+    list-style: none;
+}
+/*********************
+----Button
+*********************/
+.buttons{
+    padding: 0.5em;
+    border-radius: 5rem;
+}
+.w-1{
+    background-color: white;
+    color: black;
+}
+
 
 /*********************
 -   HEADER
 *********************/
 header{
-    
+    width: 100%;
+    background-color: var(--blue-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+header nav{
+    padding: 0.6rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 60%;    
+
+}
+header ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.hamburger{
+    display: none;
+
+}
+@media  screen and (max-width:880px) {
+    header ul{
+        display: none;
+    }
+    nav{
+        min-width: 90%;
+    }
+    .hamburger{
+        display: block;
+        font-size: 2rem;
+    }
+  
+}
+/*********************
+-   SECTION-PAGE-1
+*********************/
