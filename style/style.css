@@ -24,7 +24,7 @@ ul{
 ----Button
 *********************/
 .buttons{
-
+    max-width:fit-content;
     border-radius: 5rem;
 }
 .w-1{
@@ -33,10 +33,10 @@ ul{
     color: black;
 }
 .b-1{
-    padding: 0.5em 01.5em;
+    padding: 0.5em 1.5em;
     background-color: var(--blue-bg);
     color: white;
-    max-width:fit-content;
+
  
 
 }
@@ -48,7 +48,11 @@ ul{
     font-size: 0.8em;
     font-weight: bolder;
 }
-
+.v-1{
+    background-color: var(--violet-bg);
+    padding: 0.5em 1.5em;
+    color: white;
+}
 
 /*********************
 -   HEADER
@@ -90,6 +94,7 @@ header ul{
     }
   
 }
+
 /*********************
 -   SECTION-PAGE-1
 *********************/
@@ -105,7 +110,6 @@ header ul{
     background-color: var(--l-blue-bg);
     border-radius: 20px;
 }
-
 .large-card{
     width: calc(((100% - 1rem) / 3) * 2 );
     display: flex;
@@ -173,6 +177,7 @@ header ul{
        
     }
 }
+
 /*********************
 -   SECTION-PAGE-2
 *********************/
@@ -227,6 +232,7 @@ header ul{
     }
 
 }
+
 /*********************
 -   SECTION-PAGE-3
 *********************/
@@ -282,6 +288,65 @@ header ul{
         flex-direction: column;
         text-align: center;
         align-items: center;
+    }
+    .testimonial-card div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/*********************
+-   SECTION-PAGE-4
+*********************/
+.bg-v-section-page-4{
+    background-color: var(--violet-bg);
+    width: 100%;
+}
+.section-page-4{
+    max-width: 60%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    margin-top: 2.5rem;
+}
+.card-container-p4{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.benefit-card{
+    width: calc((100% - 2rem) / 3);
+    background-color: white;
+    border-radius: 20px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+}
+.benefit-card .counter-day, .benefit-card h4{
+    color: var(--violet-bg);
+}
+.benefit-card .counter-day{
+    font-size: 2rem;
+    font-weight: bold;
+}
+@media  screen and (max-width:880px) {
+    .section-page-4{
+        max-width: 90%;
+    }
+    .benefit-card{
+        width: calc((100% - 1rem) / 2);
+    }
+}
+@media screen and (max-width:519px) {
+    .benefit-card{
+        width: 100%;
     }
     .testimonial-card div{
         display: flex;
