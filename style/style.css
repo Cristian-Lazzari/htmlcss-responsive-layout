@@ -52,6 +52,7 @@ ul{
     background-color: var(--violet-bg);
     padding: 0.5em 1.5em;
     color: white;
+    white-space: nowrap;
 }
 
 /*********************
@@ -354,4 +355,124 @@ header ul{
         align-items: center;
         text-align: center;
     }
+}
+
+/*********************
+-   SECTION-PAGE-5
+*********************/
+.section-page-5{
+    margin-top: 2rem;
+    max-width: 58%;
+    margin-inline: auto;
+    display: flex;
+}
+.sp5-right{
+    position: relative;
+    color: var(--violet-bg);
+    font-weight: bold;
+    max-width: 101px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.sp5-left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-right: 1.5rem;
+}
+.sp5-right img{
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.big-r{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2.5rem;
+    
+}
+.sp5-right .image{
+    position: relative;
+    max-width: fit-content;
+}
+
+@media  screen and (max-width:880px) {
+    
+}
+@media screen and (max-width:519px) {
+    .section-page-5{
+        flex-direction: column;
+        max-width: 90%;
+    }
+    .sp5-left {
+        width: 100%;
+        margin-bottom: 1rem;
+        
+    }
+    .sp5-right{
+        max-width: 90%;
+    }
+    .sp5-right img{
+        height: var(--testimonial-face);
+        width: var(--testimonial-face);
+    }
+}
+/*********************
+-   SECTION-PAGE-6
+*********************/
+.section-page-6{
+    background-color: var(--violet-bg);
+    color: white;
+    margin-top: 2rem;
+    padding: 2rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/*********************
+-   FOOTER
+*********************/
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+    color: white;
+}
+footer .container, .section-page-6 .container{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    
+}
+@media screen and (max-width:519px) {
+    footer .container, .section-page-6 .container{
+        width: 90%;
+    }   
+}
+@media screen and (max-width:580px) {
+    footer .container, .section-page-6 .container{
+        width: 70%;
+    }   
 }
